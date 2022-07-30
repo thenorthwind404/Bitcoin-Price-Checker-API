@@ -48,3 +48,7 @@ parameters - username, password need to be entered in the fields provided on the
 The API call starts the functions that checks the price of bitcoin in realtime and send the email to all satisfied alerts. Status of alert is changed to triggered after email is sent.
 
   
+# Improvements that can be done
+### Users can be assigned roles such as admin or regular users. Admin will be able to view all user details and trigger the sendEmail API Call
+### User ID for users could be generated as a random characters of string instead of Integer. 
+### User's can be assigned a seperate public ID for security reasons
