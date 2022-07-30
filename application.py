@@ -54,6 +54,7 @@ def token_required(f):
             return jsonify({'Response':'Invalid Token'})
         
         return f(current_user, *args, **kwargs)
+    return decorated
 
 @app.route('/')
 def indef():
@@ -154,6 +155,8 @@ def theInfiniteLoop():
             send_email_to=userRow.uemail
             your_name=userRow.uname
             send_email()
+            targetRow.astatus = 'triggered'
+            db.session.commit()
             print("Ctrl + C to quit, will check again in 5 minutes.")        
         
         print('Price is ' + str(bitcoin_rate) + '. Will check again in 5 minutes. Ctrl + C to exit.')
