@@ -1,4 +1,4 @@
-# Krypto Backend API Task
+# Real Time Bitcoin Price Checker API
 
 ## Tech Stack:
 Python, Flask for the web application framework, SQLite for the Database Engine, SQLAlchemy as the Object Relational Mapper and Postman is used for API testing.
